@@ -8,10 +8,10 @@ import {
   PanResponder,
   Animated,
   ScrollView,
-  Image,
-  Slider
+  Image
 } from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
+import Slider from "react-native-slider";
 
 const SCREEN_WIDTH = Dimensions.get("window").width;
 const SCREEN_HEIGHT = Dimensions.get("window").height;
@@ -175,8 +175,8 @@ export default class App extends Component {
                   justifyContent: "space-around"
                 }}
               >
-                <Icon name="md-pause" size={32} />
-                <Icon name="md-play" size={32} />
+                <Icon name="md-play" size={32} color="black" />
+                <Icon name="md-skip-forward" size={32} color="black" />
               </Animated.View>
             </Animated.View>
 
@@ -193,10 +193,12 @@ export default class App extends Component {
                   justifyContent: "flex-end"
                 }}
               >
-                <Text style={{ fontWeight: "bold", fontSize: 22 }}>
+                <Text
+                  style={{ fontWeight: "bold", fontSize: 22, color: "black" }}
+                >
                   Starboy - Weekend
                 </Text>
-                <Text style={{ fontSize: 18, color: "#fa95ed" }}>
+                <Text style={{ fontSize: 18, color: "tomato" }}>
                   Starboy - Weekend
                 </Text>
               </View>
@@ -225,9 +227,9 @@ export default class App extends Component {
                   justifyContent: "space-around"
                 }}
               >
-                <Icon name="md-rewind" size={40} />
-                <Icon name="md-pause" size={50} />
-                <Icon name="md-fastforward" size={40} />
+                <Icon name="md-rewind" size={40} color="black" />
+                <Icon name="md-pause" size={50} color="black" />
+                <Icon name="md-fastforward" size={40} color="black" />
               </View>
               <View
                 style={{
@@ -237,8 +239,8 @@ export default class App extends Component {
                   paddingBottom: 20
                 }}
               >
-                <Icon name="md-add" size={32} style={{ color: "#fa95ed" }} />
-                <Icon name="md-more" size={32} style={{ color: "#fa95ed" }} />
+                <Icon name="md-add" size={32} style={{ color: "tomato" }} />
+                <Icon name="md-more" size={32} style={{ color: "tomato" }} />
               </View>
             </Animated.View>
             <View style={{ height: 1000 }} />
