@@ -164,7 +164,7 @@ export default class App extends Component {
                     paddingLeft: 10
                   }}
                 >
-                  Hotel California(Live)
+                  Starboy - Weekend
                 </Animated.Text>
               </View>
               <Animated.View
@@ -194,10 +194,10 @@ export default class App extends Component {
                 }}
               >
                 <Text style={{ fontWeight: "bold", fontSize: 22 }}>
-                  Hotel California (Live)
+                  Starboy - Weekend
                 </Text>
                 <Text style={{ fontSize: 18, color: "#fa95ed" }}>
-                  Eagles - Hell Freezes Over
+                  Starboy - Weekend
                 </Text>
               </View>
 
